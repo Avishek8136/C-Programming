@@ -8,7 +8,8 @@ int main() {
     char num[100];
     int p;
     scanf("%s",num);
-    for(p=0;p<100;p++)
+    int pu=strlen(num);
+    for(p=0;p<pu;p++)
     {
         switch(num[p])
         {
