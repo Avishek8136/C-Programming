@@ -10,15 +10,10 @@ int main()
     int a, b;
     scanf("%d\n%d", &a, &b);
   	// Complete the code.
-    for (int i=a;a<=b;a++)
+    for(int i=a;i<=b;i++)
     {
-        if(a>9)
-            if(i%2==0)
-                printf("even\n");
-            else {
-                printf("odd\n");
-            }
-        else {
+        if(i<10)
+        {
             switch(i)
             {
                 case 1:
@@ -33,10 +28,10 @@ int main()
                 }
                 case 3:
                 {
-                    printf("three\n");
-                    break;
+                   printf("three\n");
+                   break;
                 }
-                    case 4:
+                case 4:
                 {
                     printf("four\n");
                     break;
@@ -52,7 +47,7 @@ int main()
                     break;
                 }
                 case 7:
-                {
+                {    
                     printf("seven\n");
                     break;
                 }
@@ -63,12 +58,18 @@ int main()
                 }
                 case 9:
                 {
-                    printf("nine\n");
-                    break;
+                   printf("nine\n");
+                   break;
                 }
             }
         }
-    }  
+        else {
+            if(i%2==0)
+                printf("even\n");
+            else {
+                printf("odd\n");
+            }
+        }
+    }
     return 0;
 }
-
